@@ -1,0 +1,49 @@
+<html><head>
+	<title>Camera Sort</title>
+
+	<script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<script type="text/javascript" src="js/lib/backbone-min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/handlebars.runtime.js"></script>
+	<script type="text/javascript" src="templates/templates.js"></script>
+	<script type="text/javascript" src="js/models/cameraitemmodel.js"></script>
+    <script type="text/javascript" src="js/models/compareresultmodel.js"></script>
+	<script type="text/javascript" src="js/collections/cameraitems.js"></script>
+    <script type="text/javascript" src="js/collections/compareresults.js"></script>
+	<script type="text/javascript" src="js/views/cameraview.js"></script>
+	<script type="text/javascript" src="js/views/cameraformview.js"></script>
+    <script type="text/javascript" src="js/views/compareview.js"></script>
+	<script type="text/javascript" src="js/views/cameradetailsview.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript">
+		app.cameraItems.reset({{{data}}});
+	</script>	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+	<div class="container">
+		<h1>Camera Sort</h1>
+
+		<ul class="nav nav-pills">
+			<li><a href="#">Home</a></li>
+			<li><a href="#/cameras/new">Add Item</a></li>
+			<li><a href="#/cameras/">Cameras</a></li>
+			<li><a href="#/lenses/">Lenses</a></li>
+			<li><a href="#/tripods/">Tripods</a></li>
+			<li><a href="#/bags/">Bags</a></li>
+			<li><a href="#/filters">Filters</a></li>
+		</ul>
+	</div>
+
+	<div class="container" id="app">
+
+	</div>
+
+</body>
+</html>

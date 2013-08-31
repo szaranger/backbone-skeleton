@@ -1,0 +1,12 @@
+.nav-pills > li > a {
+	border-radius: 0px;
+}
+#compare-result div {
+	margin: 10px;
+	float: left;
+}
+#compare-another {
+	margin: 10px;
+	float: left;
+	clear: left;
+}

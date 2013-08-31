@@ -1,0 +1,14 @@
+<div id="compare-result">
+
+	{{#each models}}
+	<div>
+		<h1>{{attributes.name}}</h1>
+		<p><span class="label">{{attributes.category}}</span></p>
+		<p><span class="label">{{attributes.megapixels}}</span></p>
+		<img src="photos/{{attributes.imagepath}}" class="img-polaroid" />
+	</div>
+	{{/each}}
+
+	<button type="button" class="btn" id="compare-another">Back</button>
+</div>
+
