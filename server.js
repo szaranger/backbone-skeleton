@@ -2,11 +2,11 @@ var mongodb = require('mongodb');
 var db;
 var items = new Array();
  
-db = new mongodb.Db('camerasort', new mongodb.Server('paulo.mongohq.com', 10018, {auto_reconnect:true}), {});
+db = new mongodb.Db('[collection]', new mongodb.Server('[server URL]', 10018, {auto_reconnect:true}), {});
  
 db.open(function(err, p_client) {
 
-  db.authenticate('username', 'password', function(err) {
+  db.authenticate('[username]', '[password]', function(err) {
    //Change error handler when going into production 
    if (err) console.log(err);
     
