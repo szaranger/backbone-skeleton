@@ -6,7 +6,7 @@ db = new mongodb.Db('camerasort', new mongodb.Server('paulo.mongohq.com', 10018,
  
 db.open(function(err, p_client) {
 
-  db.authenticate('szaranger', 'szara77', function(err) {
+  db.authenticate('username', 'password', function(err) {
    //Change error handler when going into production 
    if (err) console.log(err);
     
